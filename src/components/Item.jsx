@@ -5,11 +5,11 @@ const cardWrapperStyle = {
   margin: '6px 0'
 };
 
-function Item(props) {
+function Item({ text }) {
   return (
     <div className="card" style={cardWrapperStyle}>
       <div className="card-body">
-        <p className="card-text">{props.text}</p>
+        <p className="card-text">{text}</p>
       </div>
     </div>
   );
